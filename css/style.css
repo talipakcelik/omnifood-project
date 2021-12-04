@@ -65,6 +65,30 @@ body {
 /****************************/
 /* GENERAL REUSABLE COMPONENTS */
 /****************************/
+.container {
+    /* 1140 genelde kullanılan bir genişlik imiş*/
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .heading-primary {
     font-size: 5.2rem;
     font-weight: 700; /* bold */
@@ -189,7 +213,7 @@ body {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 110rem; /* 1300px */ /*width olsaydı browser'ın altında scroll çıkardı*/
+    max-width: 120rem; /* 1300px */ /*width olsaydı browser'ın altında scroll çıkardı*/
     margin: 0 auto;
     padding: 0 3.2rem; /* bunun sebebi tarayıcıyı büyültüp küçülttüğümüz yan taraflara yapışıyordu, ufak ekranlar için de kenar payı */
     gap: 9.6rem;
