@@ -57,4 +57,12 @@ body {
     color: #555; /* body içinde yer alan textlerin color'u */
 }
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 130rem; /* 1300px */
+}
 
+.hero-img {
+    max-width: 100%;
+}
