@@ -169,16 +169,39 @@ body {
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor; 
+    /* currentColor: elementte hangi color varsa onu kullan*/
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
 .margin-right-sm {
     margin-right: 1.6rem !important; /*  it will override ALL previous styling rules for that specific property on that element! */
     /* bu şekildeki bir helper class ile
     elementteki diğer stillerin ne olduğuna bakmadan sadece bunu eklemiş olduk
-    elementi başka yerde kullansak otomatik margin eklememiş olacka,
-    buraya özel*/
-    
+    elementi başka yerde kullansak otomatik margin eklememiş olacak,
+    buraya özel*/ 
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important; 
+    /* 3 sütunlu grid'in sonuna bu classı ekleyerek diğerlerin etkilenmemesi sağlandı
+    bunu eklemeden container grid grid--3-cols için margin yapsaydık içindeki bütün elementlere margin eklerdi*/
 }
 
 
 strong {
     font-weight: 500;
+    color: ;
 }
