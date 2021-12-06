@@ -186,6 +186,8 @@ body {
     border-bottom: 1px solid transparent;
 }
 
+/* HELPER/SETTINGS CLASSES */
+
 .margin-right-sm {
     margin-right: 1.6rem !important; /*  it will override ALL previous styling rules for that specific property on that element! */
     /* bu şekildeki bir helper class ile
@@ -200,8 +202,10 @@ body {
     bunu eklemeden container grid grid--3-cols için margin yapsaydık içindeki bütün elementlere margin eklerdi*/
 }
 
+.center-text {
+    text-align: center;
+}
 
 strong {
     font-weight: 500;
-    color: ;
 }
