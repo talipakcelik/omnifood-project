@@ -170,11 +170,12 @@ body {
 }
 
 .margin-right-sm {
-    margin-right: 1.6rem !important /*  it will override ALL previous styling rules for that specific property on that element! */
+    margin-right: 1.6rem !important; /*  it will override ALL previous styling rules for that specific property on that element! */
     /* bu şekildeki bir helper class ile
     elementteki diğer stillerin ne olduğuna bakmadan sadece bunu eklemiş olduk
     elementi başka yerde kullansak otomatik margin eklememiş olacka,
     buraya özel*/
+    
 }
 
 
