@@ -85,6 +85,12 @@ body {
     row-gap: 9.6rem;
 }
 
+.grid:not(:last-child) { 
+    /* if the grid element is not the last child inside of its parent container */
+    margin-bottom: 9.6rem;
+}
+
+
 .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -94,14 +100,15 @@ body {
 }
 
 .grid--4-cols {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
     align-items: center;
 }
 .heading-primary, 
-.heading-secondary, .heading-tertiary {
+.heading-secondary, 
+.heading-tertiary {
     font-weight: 700; /* bold */
     color: #333;
     letter-spacing: -0.5px; /* scale up/down'a bakmayan bir şey olduğunu için px kullanılabilir burda */

@@ -397,6 +397,40 @@
     padding: 9.6rem 0;;
 }
 
+.pricing-plan {
+    border-radius: 11px;
+    width: 75%; 
+}
+
+.pricing-plan--starter {
+    display: inline-block;
+    justify-self: end; 
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+    content: "En iyi fiyat";
+    position: absolute;
+    top: 6%;
+    right: -18% ;
+    /**/
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+}
+
 .plan-header {
     text-align: center;
     margin-bottom: 4.8rem;
@@ -435,4 +469,37 @@
 .plan-sign-up {
     text-align: center;
     margin-top: 4.8rem;
+}
+
+
+/****************************/
+/* FEATURE SECTION */
+/****************************/
+
+.plan-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+.feature-icon {
+    color: #e67e22;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-bottom: 2.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+
+}
+.feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
 }
